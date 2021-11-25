@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      body {
+        background-color: hsl(217, 54%, 11%);
+        font-family: "Outfit", sans-serif;
+      }
+      .box {
+        position: relative;
+        width: 23rem;
+        height: 42rem;
+        background-color: hsl(216, 50%, 16%);
+        margin: 20rem auto;
+        border-radius: 8px;
+        box-shadow: -16px 22px 26px #070318;
+      }
+      .decor {
+        margin: 1.2rem 1.5rem;
+        color: hsl(0, 0%, 100%);
+      }
+      img {
+        width: 20rem;
+        height: 20rem;
+        margin: 1.5rem 1.5rem 0.5rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+      }
+      .heading {
+        font-weight: 600;
+        font-family: inherit;
+        font-size: 1.6rem;
+        margin: 0.5rem 0rem 1rem;
+      }
+
+      .links {
+        color: hsl(0, 0%, 100%);
+        text-decoration: none;
+      }
+      .links:active {
+        color: hsl(178, 100%, 50%);
+      }
+      .sub-head {
+        font-size: 1.2rem;
+        opacity: 40%;
+        line-height: 1.5;
+      }
+      .f-box {
+        margin: 1rem 0rem 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        align-items: center;
+      }
+      .atr-l {
+        color: #00fff8;
+        opacity: 90%;
+      }
+      .atr-r {
+        color: #8bacd9;
+        opacity: 90%;
+      }
+
+      svg {
+        vertical-align: bottom;
+      }
+      .sp {
+        margin-left: 0.35rem;
+      }
+      hr {
+        opacity: 20%;
+      }
+      .profile {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 1.2rem 0.4rem;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+      .invi {
+        position: absolute;
+        top: 10em;
+        left: 9em;
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .last {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+      .last span {
+        margin-left: 0.5rem;
+        opacity: 60%;
+      }
+      #jw {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+      }
+      #jw:active {
+        color: hsl(178, 100%, 50%);
+        font-weight: 700;
+      }
+      #butt {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        height: 20rem;
+        width: 20rem;
+        border-radius: 8px;
+      }
+      #butt:active {
+        background-color: hsl(178, 100%, 50%);
+        cursor: pointer;
+        opacity: 40%;
+      }
+      #butt-1:active {
+        position: absolute;
+        top: 36%;
+        left: 36%;
+        opacity: 100;
+        /* display: block; */
+        /* visibility: hidden; */
+      }
+      #butt-1 {
+        opacity: 0;
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <img src="images/image-equilibrium.jpg" alt="Illuminated cube" \ />
+      <a id="butt">
+        <svg
+          id="butt-1"
+          width="48"
+          height="48"
+          xmlns="http://www.w3.org/2000/svg"
+          class="invi"
+        >
+          <g fill="none" fill-rule="evenodd">
+            <path d="M0 0h48v48H0z" />
+            <path
+              d="M24 9C14 9 5.46 15.22 2 24c3.46 8.78 12 15 22 15 10.01 0 18.54-6.22 22-15-3.46-8.78-11.99-15-22-15Zm0 25c-5.52 0-10-4.48-10-10s4.48-10 10-10 10 4.48 10 10-4.48 10-10 10Zm0-16c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6Z"
+              fill="#FFF"
+              fill-rule="nonzero"
+            />
+          </g>
+        </svg>
+      </a>
+      <div class="decor">
+        <h1 class="heading"><a href="#" class="links">Equilibrium #3429</a></h1>
+        <p class="sub-head">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="f-box">
+          <p class="atr-l">
+            <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
+                fill="#00FFF8"
+              />
+            </svg>
+            <span class="sp">0.041 ETH</span>
+          </p>
+          <p class="atr-r">
+            <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
+                fill="#8BACD9"
+              />
+            </svg>
+            <span class="sp">3 days left</span>
+          </p>
+        </div>
+        <hr color="#8BACD9" size="2px" />
+        <div class="last">
+          <img
+            src="images/image-avatar.png"
+            alt="Jules Wyvern Profile Pic"
+            class="profile"
+          />
+          <span> Creation of <a href="#" id="jw">Jules Wyvern</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
